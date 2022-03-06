@@ -328,7 +328,7 @@ section .button button:hover{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.services .boxes .box{
+.services .boxes .serv{
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -338,11 +338,22 @@ section .button button:hover{
   cursor: default;
   transition: all 0.4s ease;
 }
-.services .boxes .box:hover{
+@media (max-width: 850px) {
+  
+}
+@media (max-width: 700px) {
+  .serv {
+    justify-content: center;
+    flex: 75%;
+  }
+}
+  
+}
+.services .boxes .serv:hover{
   background: black;
   color: #fff;
 }
-.services .boxes .box .icon{
+.services .boxes .serv .icon{
   height: 50px;
   width: 50px;
   background: black;
@@ -354,17 +365,17 @@ section .button button:hover{
   margin: 0 auto 10px auto;
   transition: all 0.4s ease;
 }
-.boxes .box:hover .icon{
+.boxes .serv:hover .icon{
   background-color: #fff;
   color: black;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.services .boxes .serv:hover .topic,
+.services .boxes .serv:hover p{
   color: #0E2431;
   transition: all 0.4s ease;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.services .boxes .serv:hover .topic,
+.services .boxes .serv:hover p{
   color: #fff;
 }
 /* Contact Me CSS */
