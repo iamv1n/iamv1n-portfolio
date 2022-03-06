@@ -115,7 +115,7 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background: url("./Images/bg1.jpg") no-repeat;
+  background: url("./Images/BG/bg1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -307,9 +307,7 @@ section .button button:hover{
   margin: 20px 0;
 }
 @media (max-width: 850px) {
-  .box {
-    justify-content: center;
-    
+  .skills-details .box {
     flex: 50%;
   }
 }
@@ -328,7 +326,7 @@ section .button button:hover{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.services .boxes .serv{
+.services .boxes .box{
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -338,22 +336,16 @@ section .button button:hover{
   cursor: default;
   transition: all 0.4s ease;
 }
-@media (max-width: 850px) {
-  
-}
-@media (max-width: 700px) {
-  .serv {
-    justify-content: center;
+@media (max-width: 570px) {
+  .services .boxes .box {
     flex: 75%;
   }
 }
-  
-}
-.services .boxes .serv:hover{
+.services .boxes .box:hover{
   background: black;
   color: #fff;
 }
-.services .boxes .serv .icon{
+.services .boxes .box .icon{
   height: 50px;
   width: 50px;
   background: black;
@@ -365,17 +357,17 @@ section .button button:hover{
   margin: 0 auto 10px auto;
   transition: all 0.4s ease;
 }
-.boxes .serv:hover .icon{
+.boxes .box:hover .icon{
   background-color: #fff;
   color: black;
 }
-.services .boxes .serv:hover .topic,
-.services .boxes .serv:hover p{
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
   color: #0E2431;
   transition: all 0.4s ease;
 }
-.services .boxes .serv:hover .topic,
-.services .boxes .serv:hover p{
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
   color: #fff;
 }
 /* Contact Me CSS */
