@@ -306,6 +306,13 @@ section .button button:hover{
   width: calc(100% / 4 - 20px);
   margin: 20px 0;
 }
+@media (max-width: 850px) {
+  .box {
+    justify-content: center;
+    
+    flex: 50%;
+  }
+}
 .skills-details .boxes .topic{
   font-size: 20px;
   color: #4070f4;
@@ -519,7 +526,8 @@ footer .text span a:hover{
 
 
 .Edyu{
-  margin-left: 20%;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .hvr-grow-rotate {
